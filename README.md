@@ -32,3 +32,20 @@ It supports many popular distros such as **Arch, Debian, Ubuntu, Fedora, openSUS
 | **Solus**    | Solus                        | eopkg            | `sudo eopkg upgrade` |
 
 ---
+# ⚡ Running the Update Script from Anywhere
+
+If you want to use the update script directly in your terminal **from any location**,  
+you can move (or copy) it into a directory that’s included in your system’s `$PATH`,  
+such as `/usr/bin/` or `/usr/local/bin/`.
+
+---
+
+## 🪄 Make It Globally Accessible
+
+1. Move the script to `/usr/bin/`:
+   ```bash
+   `sudo mv update.sh /usr/bin/`
+2. Make sure it’s executable:
+   `sudo chmod +x /usr/bin/update.sh`
+3. Now you can run it from anywhere:
+   `update.sh`
