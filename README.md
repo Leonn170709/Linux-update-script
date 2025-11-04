@@ -1,2 +1,34 @@
-# Linux-update-script
-a simple update script that updates your system and flathub (currently only supports arch distros)
+# 🔧 Universal Linux Update Script
+
+This Bash script automatically detects which Linux distribution you’re running  
+and executes the appropriate **update command** for your system.  
+
+It supports many popular distros such as **Arch, Debian, Ubuntu, Fedora, openSUSE, Alpine, Void, Gentoo, and Solus**.
+
+---
+
+## 🚀 Features
+
+- Automatically detects your Linux distribution via `/etc/os-release`
+- Runs the correct update command for your package manager (`pacman`, `apt`, `dnf`, `zypper`, `apk`, `xbps`, `emerge`, `eopkg`)
+- Supports **automatic installation** (no confirmation prompts)
+- Optional **log retention**
+- Also updates **Flatpak** packages
+- Clean, colorful output
+
+---
+
+## 🧩 Supported Distributions
+
+| Base        | Examples                     | Package Manager | Command |
+|--------------|------------------------------|------------------|----------|
+| **Arch**     | Arch, Manjaro                | pacman           | `sudo pacman -Syu` |
+| **Debian**   | Debian, Ubuntu, Linux Mint   | apt              | `sudo apt update && sudo apt upgrade` |
+| **Fedora**   | Fedora, RHEL, CentOS         | dnf              | `sudo dnf upgrade` |
+| **openSUSE** | openSUSE, GeckoLinux         | zypper           | `sudo zypper refresh && sudo zypper update` |
+| **Alpine**   | Alpine Linux                 | apk              | `sudo apk update && sudo apk upgrade` |
+| **Void**     | Void Linux                   | xbps-install     | `sudo xbps-install -Suy` |
+| **Gentoo**   | Gentoo                       | emerge           | `sudo emerge --sync && sudo emerge -uDU @world` |
+| **Solus**    | Solus                        | eopkg            | `sudo eopkg upgrade` |
+
+---
