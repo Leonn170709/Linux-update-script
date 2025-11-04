@@ -44,8 +44,10 @@ such as `/usr/bin/` or `/usr/local/bin/`.
 
 1. Move the script to `/usr/bin/`:
    ```bash
-   `sudo mv update.sh /usr/bin/`
+   sudo mv update.sh /usr/bin/
 2. Make sure it’s executable:
-   `sudo chmod +x /usr/bin/update.sh`
-3. Now you can run it from anywhere:
-   `update.sh`
+   ```bash
+   sudo chmod +x /usr/bin/update.sh
+4. Now you can run it from anywhere:
+   ```bash
+   update.sh
