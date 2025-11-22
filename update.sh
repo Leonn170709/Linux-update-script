@@ -83,7 +83,7 @@ fi
 
 # Log file location
 if [[ $EUID -eq 0 ]]; then
-    LOG_FILE="/var/log/universal-update.log"
+    LOG_FILE="/var/log/updaterlogs/update@$(date).log"
 else
     LOG_FILE="$HOME/updaterlogs/update@$(date).log"
 fi
