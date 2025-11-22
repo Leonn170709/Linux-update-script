@@ -19,7 +19,7 @@ fi
 # Erkenne Basis-System
 BASE="unknown"
 
-if [[ "$ID_LIKE" == *"arch"* || "$ID" == "arch" || "$ID" == "manjaro" ]]; then
+if [[ "$ID_LIKE" == *"arch"* || "$ID" == "arch" || "$ID" == "manjaro" || "$ID" == "cachyos" ]]; then
     BASE="arch"
 elif [[ "$ID_LIKE" == *"debian"* || "$ID_LIKE" == *"ubuntu"* || "$ID" == "debian" || "$ID" == "ubuntu" || "$ID" == "linuxmint" ]]; then
     BASE="debian"
